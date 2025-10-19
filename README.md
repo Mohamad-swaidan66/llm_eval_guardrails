@@ -40,19 +40,32 @@ Perfect for:
 
 llm-eval-guardrails/
 ├── llm_eval_guardrails.ipynb # Main notebook
+
 ├── requirements.txt # Dependencies
+
 ├── .env.example # Example environment config
+
 ├── .gitignore # Ignore virtualenv & secrets
+
 │
 ├── artifacts/ # Output results
+
 │ ├── results.csv
+
 │ └── results.json
+
 │
 ├── assets/ # (Optional) images for README
-│ ├── dashboard.png
+
+│ ├── dashboard.png 
+
+
 │ └── latency_chart.png
+
 │
 └── data/ # (Optional) test examples
+
 ├── sample_tests.json
+
 └── redteam_prompts.txt
 ---
