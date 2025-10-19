@@ -41,21 +41,21 @@ Perfect for:
 llm-eval-guardrails/
 ├── llm_eval_guardrails.ipynb # Main notebook
 
-├── requirements.txt # Dependencies
+├── requirements.txt 
 
-├── .env.example # Example environment config
+├── .env.example 
 
-├── .gitignore # Ignore virtualenv & secrets
+├── .gitignore
 
 │
-├── artifacts/ # Output results
+├── artifacts/ 
 
 │ ├── results.csv
 
 │ └── results.json
 
 │
-├── assets/ # (Optional) images for README
+├── assets/
 
 │ ├── dashboard.png 
 
