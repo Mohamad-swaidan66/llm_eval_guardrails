@@ -39,34 +39,28 @@ Perfect for:
 ## 📁 Project Structure
 
 llm-eval-guardrails/
-├── llm_eval_guardrails.ipynb # Main notebook
-
-├── requirements.txt 
-
-├── .env.example 
-
-├── .gitignore
-
+├── llm_eval_guardrails.ipynb # Notebook principal : évaluation et guardrails LLM
+├── requirements.txt # Dépendances Python nécessaires
+├── README.md # Documentation du projet
+├── LICENSE # Licence open source (MIT)
+├── .env.example # Exemple de configuration d’environnement
 │
-├── artifacts/ 
-
-│ ├── results.csv
-
-│ └── results.json
-
+├── app/ # (Optionnel) scripts Python modulaires
+│ ├── metrics.py # Calcul des métriques EM, F1, latence
+│ ├── pii_detector.py # Détection d’emails, numéros et IBAN
+│ ├── redteam.py # Prompts de red teaming / jailbreak
+│ └── llm_client.py # Client Ollama / HTTP API / mock
 │
-├── assets/
-
-│ ├── dashboard.png 
-
-
-│ └── latency_chart.png
-
+├── data/ # Jeux de tests (Q&A, jailbreak, etc.)
+│ ├── sample_tests.json # Exemples de scénarios
+│ └── redteam_prompts.txt # Prompts d’attaque adversariale
 │
-└── data/ # (Optional) test examples
-
-├── sample_tests.json
-
-└── redteam_prompts.txt
+├── artifacts/ # Sorties et rapports générés
+│ ├── results.csv # Tableau de résultats métriques
+│ └── results.json # Résultats exportés en JSON
+│
+└── assets/ # Images et illustrations du README
+├── dashboard.png # Exemple de dashboard
+└── latency_chart.png # Distribution de latence
 
 ---
