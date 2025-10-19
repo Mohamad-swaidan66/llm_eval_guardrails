@@ -36,36 +36,23 @@ Perfect for:
 
 ---
 
-
 ## 📁 Project Structure
 
 llm-eval-guardrails/
+├── llm_eval_guardrails.ipynb # Main notebook
+├── requirements.txt # Dependencies
+├── .env.example # Example environment config
+├── .gitignore # Ignore virtualenv & secrets
 │
-├── 📄 README.md                  # Description complète du projet (vue sur GitHub)
-├── 📦 requirements.txt           # Liste des dépendances Python
-├── ⚙️ .env.example               # Exemple de configuration d'environnement
-├── 🚫 .gitignore                 # Fichiers à ignorer par Git
+├── artifacts/ # Output results
+│ ├── results.csv
+│ └── results.json
 │
-├── 📓 llm_eval_guardrails.ipynb  # Notebook principal (le cœur du projet)
+├── assets/ # (Optional) images for README
+│ ├── dashboard.png
+│ └── latency_chart.png
 │
-├── 📂 app/                       # (optionnel) modules Python si tu sépares ton code
-│   ├── metrics.py                # Calcul des métriques EM, F1, etc.
-│   ├── pii_detector.py           # Détection PII (emails, phones, etc.)
-│   ├── redteam.py                # Prompts de red teaming / jailbreaks
-│   └── llm_client.py             # Client pour Ollama / HTTP API
-│
-├── 📂 data/                      # Jeux de tests et entrées de validation
-│   ├── sample_tests.json
-│   └── redteam_prompts.txt
-│
-├── 📂 artifacts/                 # Sorties générées
-│   ├── results.csv
-│   └── results.json
-│
-├── 📂 assets/                    # Images, graphiques, captures d’écran
-│   ├── dashboard.png
-│   └── latency_chart.png
-│
-└── 📜 LICENSE                    # Licence (MIT, Apache 2.0, etc.)
-
+└── data/ # (Optional) test examples
+├── sample_tests.json
+└── redteam_prompts.txt
 ---
