@@ -36,7 +36,9 @@ Perfect for:
 
 ---
 
+
 ## 📁 Project Structure
+
 
 llm-eval-guardrails/
 ├── llm_eval_guardrails.ipynb # Main notebook
@@ -52,5 +54,6 @@ llm-eval-guardrails/
 └── data/ # (Optional) test examples
 ├── sample_tests.json
 └── redteam_prompts.txt
+
 
 ---
